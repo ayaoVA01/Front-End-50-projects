@@ -18,7 +18,6 @@ async function getMovies(url) {
 
 function showMovies(movies) {
     main.innerHTML = ''
-
     movies.forEach((movie) => {
         const { title, poster_path, vote_average, overview } = movie
 
@@ -39,7 +38,7 @@ function showMovies(movies) {
         main.appendChild(movieEl)
     })
 }
-
+// 
 function getClassByRate(vote) {
     if(vote >= 8) {
         return 'green'
